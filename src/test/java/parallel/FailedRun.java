@@ -13,14 +13,13 @@ import io.cucumber.testng.CucumberOptions;
 				}, 
 		monochrome = true,
 		glue = { "parallel" },
-//		tags = "not @Skip",
-		features = { "src/test/resources/parallel" }
+		features = { "@target/failedrerun.txt" }
 )
-
-public class ParallelRun extends AbstractTestNGCucumberTests {
+public class FailedRun extends AbstractTestNGCucumberTests {
 	@Override
 	@DataProvider(parallel = true)
 	public Object[][] scenarios() {
 		return super.scenarios();
 	}
+
 }

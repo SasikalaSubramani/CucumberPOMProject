@@ -11,7 +11,7 @@ public class LoginPage {
 	private By emailId = By.id("input-email");
 	private By paasword = By.id("input-password");
 	private By signInButton = By.xpath("//input[@value = 'Login']");
-	private By forgotPwdLink = By.linkText("Forgotten Password11");
+	private By forgotPwdLink = By.linkText("Forgotten Password");
 
 	// constructor of the page class
 

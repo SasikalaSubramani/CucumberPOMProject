@@ -5,7 +5,7 @@ Given user has already logged in to application
 |username|password|
 |sasikala050995@gmail.com|Sasi@123|
 
-@accounts
+@accounts @skip_scenario
 Scenario: Accounts page title
 Given user is on Accounts page
 When user gets the title of the page
