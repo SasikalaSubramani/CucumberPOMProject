@@ -11,7 +11,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "src/test/resources/parallel" },
+@CucumberOptions(features = { "src/test/resources/parallel/RegisterPage.feature" },
 					glue = { "parallel",}, 
 					plugin = {
 		"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "timeline:test-output-thread/"
@@ -21,7 +21,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 public class ParallelRun extends AbstractTestNGCucumberTests{
 	
 	@Override
-	@DataProvider(parallel = true)
+	@DataProvider(parallel = false)
 	public Object[][] scenarios(){
 		return super.scenarios();
 	}
